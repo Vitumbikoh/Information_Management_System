@@ -16,7 +16,9 @@ const DashboardCard = ({ title, description, color }) => {
   };
 
   return (
-    <div className={`${colorClasses[color]} text-white p-6 rounded-md shadow-md text-center`}>
+    <div
+      className={`${colorClasses[color]} text-white p-6 rounded-md shadow-md text-center transform transition-transform duration-300 hover:scale-105`}
+    >
       <h3 className="text-lg font-bold capitalize">{title}</h3>
       <p className="mt-2">{description}</p>
     </div>

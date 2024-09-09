@@ -11,10 +11,10 @@ const Dashboard = () => {
     { title: 'Student', description: 'Total students', color: 'red' },
     { title: 'Teacher', description: 'Total teachers', color: 'green' },
     { title: 'Parent', description: 'Total parents', color: 'blue' },
-    { title: 'Librarian', description: 'Total librarians', color: 'blue' },
-    { title: 'Accountants', description: 'Total accountants', color: 'green' },
+    { title: 'Librarian', description: 'Total librarians', color: 'gray' },
+    { title: 'Accountants', description: 'Total accountants', color: 'orange' },
     { title: 'All Enquiries', description: 'Total enquiries', color: 'red' },
-    { title: 'All Messages', description: 'Total messages', color: 'blue' },
+    { title: 'All Messages', description: 'Total messages', color: 'green' },
     { title: 'Attendance', description: 'Total present today', color: 'blue' },
   ];
 
