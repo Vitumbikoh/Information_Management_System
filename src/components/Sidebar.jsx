@@ -1,4 +1,4 @@
-// Sidebar.jsx
+// src/components/Sidebar.jsx
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -8,10 +8,11 @@ const Sidebar = () => {
   return (
     <div className="w-64 h-screen bg-gray-800 text-white p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold uppercase">dashboard</h2>
+        <h2 className="text-2xl font-bold uppercase"><FontAwesomeIcon icon={faUser} size="2x" /></h2>
         <FontAwesomeIcon icon={faBars} size="2x" />
       </div>
       <ul className="space-y-4">
+      <li><Link to="/dashboard">Dashboard</Link></li>
         <li><Link to="/manage-session">Manage Session</Link></li>
         <li><Link to="/students">Students</Link></li>
         <li><Link to="/academic-syllabus">Academic Syllabus</Link></li>

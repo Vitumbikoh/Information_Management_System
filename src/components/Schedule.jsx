@@ -1,14 +1,21 @@
+// components/Schedule.js
 import React from 'react';
 
 function Schedule() {
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md">
-      <h3 className="text-gray-700 text-lg mb-4">Event Schedule</h3>
-      <div className="grid grid-cols-3 gap-2">
-        <p className="font-bold">June 2018</p>
-        <button className="bg-gray-300 p-2 rounded">Today</button>
-        <button className="bg-gray-300 p-2 rounded">Next</button>
-      </div>
+    <div className="bg-white shadow-md rounded-lg p-4">
+      <h3 className="text-lg font-semibold mb-4">Event Schedule</h3>
+      <ul>
+        <li className="mb-2">
+          <strong>June 1, 2024:</strong> Teachers' Meeting
+        </li>
+        <li className="mb-2">
+          <strong>June 15, 2024:</strong> Parent-Teacher Conference
+        </li>
+        <li className="mb-2">
+          <strong>June 30, 2024:</strong> End of Term
+        </li>
+      </ul>
     </div>
   );
 }

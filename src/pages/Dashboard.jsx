@@ -4,13 +4,15 @@ import Schedule from '../components/Schedule'
 import Chart from '../components/Chart'
 
 
-function ManageSession() {
+function Dashboard() {
   return (
     <div className="flex-1 bg-gray-100">
-      Manage Session
+      <DashboardCard />
+      <Schedule />
+      <Chart />
     </div>
     
   )
 }
 
-export default ManageSession
+export default Dashboard

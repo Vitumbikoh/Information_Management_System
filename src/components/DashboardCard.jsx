@@ -1,28 +1,18 @@
-// DashboardCard.jsx
+// components/DashboardCard.js
 import React from 'react';
 
-const DashboardCard = ({ title, description, color }) => {
-  // Map color names to actual Tailwind CSS color classes
-  const colorClasses = {
-    red: "bg-red-500",
-    green: "bg-green-500",
-    blue: "bg-blue-500",
-    purple: "bg-purple-500",
-    yellow: "bg-yellow-500",
-    orange: "bg-orange-500",
-    cyan: "bg-cyan-500",
-    indigo: "bg-indigo-500",
-    gray: "bg-gray-500",
-  };
-
+function DashboardCard({ title, value, icon, bgColor }) {
   return (
-    <div
-      className={`${colorClasses[color]} text-white p-6 rounded-md shadow-md text-center transform transition-transform duration-300 hover:scale-105`}
-    >
-      <h3 className="text-lg font-bold capitalize">{title}</h3>
-      <p className="mt-2">{description}</p>
+    <div className={`p-4 ${bgColor} rounded-lg shadow-lg`}>
+      <div className="flex justify-between items-center">
+        <div>
+          <h3 className="text-white text-lg font-semibold">{title}</h3>
+          <p className="text-white text-2xl">{value}</p>
+        </div>
+        <div className="text-white text-4xl">{icon}</div>
+      </div>
     </div>
   );
-};
+}
 
 export default DashboardCard;
